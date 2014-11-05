@@ -1,0 +1,31 @@
+Source: flask
+Maintainer: Armin Ronacher <armin.ronacher@active-4.com>
+Section: python
+Priority: optional
+Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 7)
+Standards-Version: 3.9.1
+
+Package: python-flask
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: A microframework based on Werkzeug, Jinja2 and good intentio
+ .
+ Flask
+ -----
+ .
+ Flask is a microframework for Python based on Werkzeug, Jinja 2 and good
+ intentions. And before you ask: It's BSD licensed!
+ .
+ Flask is Fun
+ ````````````
+ .
+ .. code:: python
+ .
+     from flask import Flask
+     app = Flask(__name__)
+ .
+     @app.route("/")
+     def hello():
+         return "Hello World!"
+ .
+     if __name__ == "__main__":
